@@ -26,7 +26,7 @@ public class LikeListController {
     private final UserRepository userRepository;
     private final ProductRepository productRepository;
 
-    // 1. 新增喜好金融商品
+    // 新增喜好金融商品
     @PostMapping("/like")
     public ResponseEntity<String> addLikeProduct(@RequestBody LikeProductRequest request) {
         try {
@@ -40,7 +40,7 @@ public class LikeListController {
         }
     }
 
-    // 2. 查詢喜好金融商品清單
+    // 查詢喜好金融商品清單
     @GetMapping("/likes")
     public ResponseEntity<List<LikeProductResponse>> getLikeList() {
         try {
@@ -53,7 +53,7 @@ public class LikeListController {
         }
     }
 
-    // 3. 刪除喜好金融商品資訊
+    // 刪除喜好金融商品資訊
     @DeleteMapping("/like/{sn}")
     public ResponseEntity<String> deleteLikeProduct(@PathVariable Integer sn) {
         try {
@@ -67,7 +67,7 @@ public class LikeListController {
         }
     }
 
-    // 4. 更改喜好金融商品資訊
+    // 更改喜好金融商品資訊
     @PutMapping("/like/{sn}")
     public ResponseEntity<String> updateLikeProduct(@PathVariable Integer sn, @RequestBody LikeProductRequest request) {
         try {
