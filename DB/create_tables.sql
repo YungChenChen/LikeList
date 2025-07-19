@@ -8,7 +8,7 @@ CREATE TABLE `User` (
 
 -- Product Table
 CREATE TABLE `Product` (
-  `No` INT AUTO_INCREMENT PRIMARY KEY,
+  `No` VARCHAR(100) NOT NULL,
   `ProductName` VARCHAR(100) NOT NULL,
   `Price` DECIMAL(10,2) NOT NULL,
   `FeeRate` DECIMAL(5,4) NOT NULL
@@ -19,7 +19,7 @@ CREATE TABLE `LikeList` (
   `SN` INT AUTO_INCREMENT PRIMARY KEY,
   `OrderName` INT NOT NULL,
   `Account` VARCHAR(20) NOT NULL,
-  `ProductNo` INT NOT NULL,
+  `ProductNo` VARCHAR(20) NOT NULL,
   `UserID` VARCHAR(20) NOT NULL,
   `TotalFee` DECIMAL(10,2) NOT NULL,
   `TotalAmount` DECIMAL(10,2) NOT NULL,

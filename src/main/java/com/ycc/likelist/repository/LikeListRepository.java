@@ -1,6 +1,6 @@
-package com.esun.productpreference.repository;
+package com.ycc.likelist.repository;
 
-import com.esun.productpreference.model.LikeList;
+import com.ycc.likelist.model.LikeList;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LikeListRepository extends JpaRepository<LikeList, Integer> {

@@ -2,7 +2,7 @@ DELIMITER //
 
 CREATE PROCEDURE AddLikeProduct(
   IN p_userID VARCHAR(20),
-  IN p_productNo INT,
+  IN p_productNo VARCHAR(20),
   IN p_orderCount INT,
   IN p_account VARCHAR(20)
 )

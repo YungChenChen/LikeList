@@ -1,6 +1,6 @@
-package com.esun.productpreference.repository;
+package com.ycc.likelist.repository;
 
-import com.esun.productpreference.model.User;
+import com.ycc.likelist.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, String> {
